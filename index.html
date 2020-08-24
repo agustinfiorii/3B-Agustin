@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agustin Fiori</title>
+<link rel="stylesheet" type="text/css"  href="style.css" />
+</head>
+<center>
+<body>
+
+<h1>Agustin Fiori</h1>
+
+<div class="agustin">
+    <div class="dropdown">
+      <button class="dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+
+        <div class="row">
+          <div class="column">
+            <a href="#">Principal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form class="fiori">
+        <div class="input-container">
+            <div class="card">
+                <label class="name">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="ex. Jose Agnaldo">
+                <div class="card">
+                    <label class="email">E-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="ex. jose@dominio.com">
+                </div>
+                <div class="card">
+                    <label class="telef">Telefone:</label>
+                    <input type="text" id="telef" name="telef" min="0" placeholder="ex. (48) 99999-9999">
+                </div>
+                <div class="card">
+                    <button type="button" class="button2" onclick="salvar()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+  </div>
+  <script type="text/javascript">
+    function salvar() {
+
+        let nome = document.getElementById('nome');
+        let email = document.getElementById('email');
+        let telef = document.getElementById('telef');
+
+        if (nome.value == "") {
+            alert("Faltou inserir nome!");
+        }
+        if (email.value == "") {
+            alert("Faltou inserir e-mail!");
+        }
+        if (telef.value == "") {
+            alert("Faltou inserir numero!");
+
+    }
+    else{
+        alert("Sucesso!")
+    }
+    }
+</script>
+
+</body>
+</center>
+</html>
